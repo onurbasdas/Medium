@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CollectionVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
   
     @IBOutlet var learnCollectionView: UICollectionView!
     
