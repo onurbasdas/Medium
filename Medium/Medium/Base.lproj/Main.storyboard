@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6A6-8u-c68">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l2G-dm-bQg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -106,6 +106,48 @@
             </objects>
             <point key="canvasLocation" x="4252" y="840"/>
         </scene>
+        <!--Image PickerVC-->
+        <scene sceneID="pur-qf-fIB">
+            <objects>
+                <viewController id="l2G-dm-bQg" customClass="ImagePickerVC" customModule="Medium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tHC-bp-AGW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-45-99L">
+                                <rect key="frame" x="57" y="299" width="300" height="297.5"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HVx-RV-wl7"/>
+                                    <constraint firstAttribute="height" constant="300" id="fmh-fX-Vim"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lütfen Fotoğraf Seçiniz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfq-2o-OkB">
+                                <rect key="frame" x="50" y="144" width="314" height="54"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f2w-TM-gQd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xfq-2o-OkB" firstAttribute="top" secondItem="f2w-TM-gQd" secondAttribute="top" constant="100" id="2cL-1m-OX1"/>
+                            <constraint firstItem="c0n-45-99L" firstAttribute="top" secondItem="xfq-2o-OkB" secondAttribute="bottom" constant="100" id="Jtt-vf-G6P"/>
+                            <constraint firstItem="c0n-45-99L" firstAttribute="centerX" secondItem="tHC-bp-AGW" secondAttribute="centerX" id="SEv-14-1UG"/>
+                            <constraint firstItem="c0n-45-99L" firstAttribute="centerY" secondItem="tHC-bp-AGW" secondAttribute="centerY" id="dG0-X1-zOe"/>
+                            <constraint firstItem="xfq-2o-OkB" firstAttribute="leading" secondItem="f2w-TM-gQd" secondAttribute="leading" constant="50" id="irx-1n-oZn"/>
+                            <constraint firstItem="f2w-TM-gQd" firstAttribute="trailing" secondItem="xfq-2o-OkB" secondAttribute="trailing" constant="50" id="wgk-aG-Plf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePicker" destination="c0n-45-99L" id="7MB-fm-b5t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFT-ma-qgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5896" y="72"/>
+        </scene>
         <!--TableView-->
         <scene sceneID="9fJ-Eu-4Z5">
             <objects>
@@ -162,6 +204,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="folder.fill" catalog="system" width="128" height="97"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>

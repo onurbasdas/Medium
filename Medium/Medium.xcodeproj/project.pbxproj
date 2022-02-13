@@ -15,6 +15,7 @@
 		B921CF69279D77980058264F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B921CF68279D77980058264F /* Assets.xcassets */; };
 		B921CF6C279D77980058264F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B921CF6A279D77980058264F /* LaunchScreen.storyboard */; };
 		B927A1F927AFF2FB008C24E9 /* SecondTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927A1F827AFF2FB008C24E9 /* SecondTabBarVC.swift */; };
+		B9EDF4D827B80C4500267BD9 /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EDF4D727B80C4500267BD9 /* ImagePickerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B921CF6B279D77980058264F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B921CF6D279D77980058264F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B927A1F827AFF2FB008C24E9 /* SecondTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabBarVC.swift; sourceTree = "<group>"; };
+		B9EDF4D727B80C4500267BD9 /* ImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 				B921CF63279D77960058264F /* CollectionVC.swift */,
 				B901B3DA27AFF2D10027CF52 /* FirstTabBarVC.swift */,
 				B927A1F827AFF2FB008C24E9 /* SecondTabBarVC.swift */,
+				B9EDF4D727B80C4500267BD9 /* ImagePickerVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				B921CF64279D77960058264F /* CollectionVC.swift in Sources */,
 				B927A1F927AFF2FB008C24E9 /* SecondTabBarVC.swift in Sources */,
+				B9EDF4D827B80C4500267BD9 /* ImagePickerVC.swift in Sources */,
 				B921CF60279D77960058264F /* AppDelegate.swift in Sources */,
 				B921CF62279D77960058264F /* SceneDelegate.swift in Sources */,
 				B901B3DB27AFF2D10027CF52 /* FirstTabBarVC.swift in Sources */,
